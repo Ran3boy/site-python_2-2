@@ -9,27 +9,23 @@
     <meta name="description" content="{{ config.site_description }}" />
     <meta name="author" content="{{ config.site_author }}" />
 
-    <link rel="stylesheet" href="{{ base_url }}/assets/styles/index.css" />
+    <link rel="stylesheet" href="{{ 'assets/styles/index.css' | url }}" />
   </head>
 
   <body>
     <header class="site-header">
       <div class="container">
-        <a class="brand" href="{{ base_url }}/">{{ config.site_name }}</a>
+        <a class="brand" href="{{ '' | url }}">{{ config.site_name }}</a>
 
         <nav class="nav">
-          <a href="{{ base_url }}/">Главная</a>
-          <a href="{{ base_url }}/about/">О проекте</a>
+          <a href="{{ '' | url }}">Главная</a>
+          <a href="{{ 'about/' | url }}">О проекте</a>
         </nav>
       </div>
     </header>
 
     <main class="site-main">
       <div class="container">
-        {% if page.title %}
-          <h1 class="page-title">{{ page.title }}</h1>
-        {% endif %}
-
         <article class="content">
           {{ page.content }}
         </article>

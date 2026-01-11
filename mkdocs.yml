@@ -1,0 +1,11 @@
+site_name: My Custom Static Site
+site_description: Учебный статический сайт с кастомной темой (MkDocs + Jinja2) и CI/CD в GitHub Actions
+site_author: Nikolay Ivanov
+
+theme:
+  name: null
+  custom_dir: theme
+
+nav:
+  - Главная: index.md
+  - О проекте: about.md

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{{ page.title }} | {{ config.site_name }}</title>
+
+    <meta name="description" content="{{ config.site_description }}" />
+    <meta name="author" content="{{ config.site_author }}" />
+
+    <link rel="stylesheet" href="{{ base_url }}/assets/styles/index.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="{{ base_url }}/">{{ config.site_name }}</a>
+
+        <nav class="nav">
+          <a href="{{ base_url }}/">Главная</a>
+          <a href="{{ base_url }}/about/">О проекте</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <div class="container">
+        {% if page.title %}
+          <h1 class="page-title">{{ page.title }}</h1>
+        {% endif %}
+
+        <article class="content">
+          {{ page.content }}
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-row">
+          <span>© {{ config.site_author }}</span>
+          <span class="muted">{{ config.site_description }}</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

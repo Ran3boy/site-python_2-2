@@ -1,0 +1,17 @@
+/* Minimal baseline styles for MkDocs custom theme */
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.55; }
+.container { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+.site-header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #e5e7eb; }
+.site-header .container { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; }
+.brand { font-weight: 700; text-decoration: none; color: inherit; }
+.nav a { text-decoration: none; color: inherit; margin-left: 14px; opacity: .85; }
+.nav a:hover { opacity: 1; }
+.site-main { padding: 28px 0 40px; }
+.page-title { margin: 0 0 14px; font-size: 34px; }
+.content { font-size: 16px; }
+.content a { color: inherit; }
+.site-footer { border-top: 1px solid #e5e7eb; padding: 18px 0; background: #fafafa; }
+.footer-row { display: flex; gap: 12px; justify-content: space-between; flex-wrap: wrap; }
+.muted { opacity: .75; }

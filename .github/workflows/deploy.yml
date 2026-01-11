@@ -27,7 +27,7 @@ jobs:
           node-version: 20
 
       - name: Install Node dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build frontend (HTML minify + PostCSS + validate)
         run: npm run build
